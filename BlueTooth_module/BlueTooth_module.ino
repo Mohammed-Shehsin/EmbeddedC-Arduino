@@ -19,7 +19,7 @@ void loop() {
   }
   if(text='A'){
     digitalWrite(8,LOW);
-    dealy(1000);
+    delay(1000);
   }
   if(text='a'){
     digitalWrite(8,HIGH);
