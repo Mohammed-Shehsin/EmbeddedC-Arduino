@@ -5,7 +5,7 @@ void setup() {
 }
 
 void loop() {
-  Serial,println(analogRead(A2)); //for printing the sensor values in serial Monitor
+  Serial.println(analogRead(A2)); //for printing the sensor values in serial Monitor
 delay(10);
 if(analogRead(A2)<=15){
 digitalWrite(7,HIGH);
