@@ -1,0 +1,27 @@
+{ "version": 1,
+  "author": "Mohammed Shehsin Thamarachalilabdulresak",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -99.2,
+      "left": 39.53,
+      "attrs": { "color": "magenta" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -58.32,
+      "left": 103.73,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "led1:C", "uno:GND.1", "green", [ "v0" ] ],
+    [ "led1:A", "r1:1", "green", [ "v0" ] ],
+    [ "r1:2", "uno:7", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
